@@ -4,7 +4,7 @@
     <taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"/>
 
     <target name="example"> 
-	<phpmd failonerror="off"> 
+	<phpmd failonerror="on"> 
 	    <formatter type="text" toFile="${basedir}/build/logs/pmd.xml" /> 
 	    <ruleset>unusedcode</ruleset> 
 	    <ruleset>codesize</ruleset> 
