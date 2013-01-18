@@ -4,9 +4,9 @@
 
     <target name="example"> 
 	<phpmd failonerror="off"> 
-	    <formatter type="text" toFile="${basedir}/logs/pmd.xml" /> 
+	    <formatter type="text" toFile="${basedir}/build/logs/pmd.xml" /> 
 	    <ruleset>unusedcode</ruleset> 
-	    <ruleset>codesize</ruleset 
+	    <ruleset>codesize</ruleset> 
 	    <fileset dir="${basedir}/src"> 
 		<include name="*.php" /> 
 	    </fileset> 
