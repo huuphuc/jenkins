@@ -4,7 +4,7 @@
     <taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"/>
 
     <target name="phpmd_run"> 
-<!--
+
 	<phpmd failonerror="off"> 
 	    <formatter type="text" toFile="${basedir}/build/logs/pmd.xml" /> 
 	    <ruleset>unusedcode</ruleset> 
@@ -14,12 +14,13 @@
 		<include name="*.php" /> 
 	    </fileset> 
 	</phpmd> 
--->
+<!--
 	<exec executable="phpmd">
    	    <arg path="${basedir}/src" />
 	    <arg value="xml" />
    	    <arg value="${basedir}/build/ruleset.xml" />
 	</exec>
+-->
     </target>
 
     <target name="phpmd-ci" description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
