@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
-<project name="jenkins.example" default="example" basedir="."> 
+<project name="jenkins.example" default="phpmd_run" basedir="."> 
 
     <taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"/>
 
-    <target name="phpmd"> 
+    <target name="phpmd_run"> 
 <!--
 	<phpmd failonerror="off"> 
 	    <formatter type="text" toFile="${basedir}/build/logs/pmd.xml" /> 
