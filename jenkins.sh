@@ -1,7 +1,7 @@
 #!/bin/bash
 
-HOME_BUILD = "/data/webroot/jenkins";
-RESULT = $HOME_BUILD;
+HOME_BUILD = "/data/webroot/jenkins"
+RESULT = $HOME_BUILD
 
 if [ ! -d "{$HOME_BUILD}/build" ]; then
     mkdir $RESULT/build
