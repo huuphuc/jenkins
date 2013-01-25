@@ -3,7 +3,7 @@
 HOME_BUILD = "/data/webroot/jenkins"
 RESULT = $HOME_BUILD
 
-if [ ! -d "{$HOME_BUILD}/build" ]; then
+if [ ! -d "$RESULT/build" ]; then
     mkdir $RESULT/build
     mkdir $RESULT/build/logs
 fi
