@@ -1,15 +1,7 @@
 #!/bin/bash
 
-HOME_BUILD = "/data/webroot/jenkins"
-RESULT = $HOME_BUILD
+rm -rf build/logs/*.xml
 
-if [ ! -d "$RESULT/build" ]; then
-    mkdir $RESULT/build
-    mkdir $RESULT/build/logs
-fi
+/data/binary/php/bin/phpcpd --log-pmd build/logs/cpd.xml src/
 
-rm -rf $RESULT/build/logs/*.xml
-
-/data/binary/php/bin/phpcpd --log-pmd $RESULT/build/logs/cpd.xml src/
-
-/data/binary/php/bin/phpmd src/ xml unusedcode,codesize > $RESULT/build/logs/pmd.xml
+/data/binary/php/bin/phpmd src/ xml unusedcode,codesize > build/logs/pmd.xml
