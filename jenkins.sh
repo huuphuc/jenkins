@@ -10,6 +10,6 @@ fi
 
 rm -rf $RESULT/build/logs/*.xml
 
-/data/binary/php/bin/phpcpd --log-pmd $RESULT/build/logs/cpd.xml html/
+/data/binary/php/bin/phpcpd --log-pmd $RESULT/build/logs/cpd.xml src/
 
-/data/binary/php/bin/phpmd html/ xml unusedcode,codesize > $RESULT/build/logs/pmd.xml
+/data/binary/php/bin/phpmd src/ xml unusedcode,codesize > $RESULT/build/logs/pmd.xml
