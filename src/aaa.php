@@ -2,6 +2,6 @@
 
 class aaa{
 function aaa(){
-echo "kaka   kadfdsadassdfDF SDFSDFaaaaaa";
+echo "kaka   kadfassdfDF SDFSDFaaaaaa";
 }
 }
